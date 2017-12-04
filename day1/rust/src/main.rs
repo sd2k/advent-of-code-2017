@@ -1,13 +1,7 @@
-use std::fs::File;
-use std::io::{Read, Result};
+extern crate lib;
+use lib::get_file_to_string;
 
 const FILENAME: &'static str = "../input";
-
-fn get_file_to_string(f: &str) -> Result<String> {
-    let mut o = String::new();
-    File::open(f)?.read_to_string(&mut o)?;
-    Ok(o.trim().to_owned())
-}
 
 
 fn sum_shifted_adjacent_numbers(input: &str, shift: usize) -> u32 {

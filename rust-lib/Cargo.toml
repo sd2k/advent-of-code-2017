@@ -1,7 +1,6 @@
 [package]
-name = "day1"
+name = "lib"
 version = "0.1.0"
 authors = ["Ben Sully <ben@bsull.io>"]
 
 [dependencies]
-lib = { path = "../../rust-lib" }
